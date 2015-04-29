@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<config>
+  <!-- 0 if the dimension is meter, 1 centimeter -->
+  <dims> 0 </dims>
+	<!-- segmentation parameters -->
+	  <voxel-resolution> 0.003 </voxel-resolution> 
+	  <seed-resolution> 0.05 </seed-resolution> 
+	
+  <!-- function of program; cluster, part_seg, extract_patch, extract_patch_pts, estimate_patch_threshold, estimate_part_threshold -->
+  <mode> load </mode>
+  <!-- path of stored patch clusters -->
+  <patch-cluster> /media/TOSHIBA EXT/clusters/ </patch-cluster> 
+  <!-- path of stored parts clusters -->
+	<part-cluster> /media/TOSHIBA EXT/clusters-parts/ </part-cluster> 
+  <!-- path of stored prototypes models -->
+	<prototypes> /media/TOSHIBA EXT/prototypes-bmvc-washington/ </prototypes> 
+  <!-- path of stored matrix of parts occurance for each object class -->
+	<part-mats> /media/TOSHIBA EXT/part-mats/ </part-mats> 
+  <!-- path of stored matrix of patches co-occurance for adjacent parts -->
+	<part-cluster-mat> /media/TOSHIBA EXT/part-cluster/ </part-cluster-mat> 
+  <!-- path of stored parts-co-ocurance matrix -->
+  <part-object-occ-mat> /media/TOSHIBA EXT/part-object-occ/ </part-object-occ-mat> 
+  <!-- path of stored patch co-occurance matrix -->
+	<patch-cluster-mat> /media/TOSHIBA EXT/patch-cluster/patch-occ </patch-cluster-mat> 
+  <!-- path of evaluation data for parts recognition -->
+	<eval-path> /media/TOSHIBA EXT/bmvc-washington/features/test-small/ </eval-path> 
+	<patch-n-mat> /media/TOSHIBA EXT/patch-n-occ/n-occ </patch-n-mat> 
+  <!-- path of evaluation data for object recognition, contains foldes for each class -->
+  <eval-object-class> /media/TOSHIBA EXT/bmvc-washington/test-object-classes/ </eval-object-class> 
+  <!-- training data for object classes, contains folders for each class -->
+	<train-object-class>  /media/TOSHIBA EXT/bmvc-washington/train-object-classes/ </train-object-class> 
+<!-- input pcd file path -->
+	<input-pcd> /media/TOSHIBA EXT/bmvc-washington/evals-cap_1/cap_1_1_125.pcd </input-pcd>
+  <!-- input patch pcd file path -->
+  <patch-pcd> file.pcd </patch-pcd>
+  <!-- path containes all patches for a pcd data -->
+  <patches-path> ~/Documents/codes/code-primitive-shape/patches/ </patches-path>
+  <!-- directory contains input rgb-d data -->
+ <input-dir> /media/TOSHIBA EXT/bmvc-washington/features/train-objects/ </input-dir> 
+	<!-- default path for storing data -->
+	<default-path> /media/TOSHIBA EXT/ </default-path>
+	<!-- visualization for debugging -->
+	<debug-mode> 0 </debug-mode>
+</config>
